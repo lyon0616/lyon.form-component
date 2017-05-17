@@ -1,0 +1,171 @@
+{"data":
+	[
+		{
+		    "pwrapidname":"#myform1",
+			"elements":[
+	    		{
+		            "labelname": "用户名",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "username",
+		            "class": "username form-control",
+		            "names": "username",
+		            "elementType": "input",
+		            "type": "text"
+        		},
+		        {
+		            "labelname": "密码",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "password",
+		            "names": "password",
+		            "class": "password form-control",
+		            "elementType": "input",
+		            "type": "password"
+		        },
+		        {
+		            "labelname": "手机号",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "phone",
+		            "names": "phone",
+		            "class": "phone form-control",
+		            "elementType": "input",
+		            "type": "number"
+		        },
+		        {
+		            "labelname": "个人网站",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "website",
+		            "names": "website",
+		            "class": "website form-control",
+		            "elementType": "input",
+		            "type": "url"
+		        },
+		        {
+		            "labelname": "个人邮箱",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "email",
+		            "names": "email",
+		            "class": "email form-control",
+		            "elementType": "input",
+		            "type": "email"
+		        },
+		        {
+		            "labelname": "请输入您的意见",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "advice",
+		            "names": "advice",
+		            "class": "advice form-control",
+		            "elementType": "textarea",
+		            "myrules":{
+		            		"required": true,
+		            		"promptTishi":true
+		        		},
+		        	"messagesinfo":{
+		        			"required": "必填"
+		        		},
+		        	"customrules":{
+		        			"promptTishi": "function(value, element){var isNumber = /^[Z0-3]+$/;return this.optional(element) || (isNumber.test(value));}"
+		        		},
+		        	"promptText":{
+		        		    "promptTishi":"请输入数字"
+		        		}
+
+		        },
+		        {
+		            "labelname": "时间",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "times",
+		            "names": "times",
+		            "class": "times form-control",
+		            "elementType": "input",
+		            "type": "date"
+		        },
+		        {
+		            "labelname": "请选择文件",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "file",
+		            "names": "file",
+		            "class": "file form-control",
+		            "elementType": "input",
+		            "type": "file"
+		        },
+		        {
+		            "labelname": "性别",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "gender",
+		            "names": "gender",
+		            "class": "gender form-control",
+		            "elementType": "input",
+		            "type": "radio",
+		            "value": ["男", "女"]
+		        },
+		        {
+		            "labelname": "爱好",
+					"labelClass":"col-sm-2 control-label",
+		            "id": "likes",
+		            "names": "likes",
+		            "class": "likes form-control",
+		            "elementType": "input",
+		            "type": "checkbox",
+		            "value": ["iPhone", "iPad", "Apple Watch", "iPod", "MacBook"]
+		        },
+		        {
+		            "labelname":"想法",
+					"labelClass":"col-sm-2 control-label",
+		            "id":"idea",
+		            "names":"idea",
+		            "class": "idea form-control",
+		            "elementType":"select",
+		            "value":["1","2","3"]
+		        },
+		        {
+		            "name": "登录",
+		            "id": "login",
+		            "names": "login",
+		            "class": "login btn btn-default",
+		            "elementType": "button"
+		        },
+		        {
+		            "name": "注册",
+		            "id": "submit",
+		            "names": "submit",
+		            "class": "submit btn btn-default",
+		            "elementType": "button"
+		        }
+	    	]
+	    },
+	   	{
+	   	    "pwrapidname":"#myform2",
+			"elements":[
+	    			{
+	    			"labelname":"第二个用户名",
+					"labelClass":"col-sm-2 control-label",
+	    			"id":"username1",
+	    			"class":"username1 form-control",
+	    			"names":"username1",
+	    			"elementType":"input",
+	    			"type":"text",
+	    			"myrules":{
+            			"required": true,
+            			"wenzi":true
+        				},
+        			"messagesinfo":{
+        				"required": "必填"
+        				},
+        			"customrules":{
+        				"wenzi": "function(value, element){var iswenzi = /^[u4e00-u9fa5]+$/;return this.optional(element) || (iswenzi.test(value));}"
+        				}
+	    		},
+	    		{
+	    			"labelname":"第二个密码",
+					"labelClass":"col-sm-2 control-label",
+	    			"id":"password1",
+	    			"class":"password1 form-control",
+	    			"names":"password1",
+	    			"elementType":"input",
+	    			"type":"text"
+	    		}
+	    	]
+	    }
+
+	]
+}
